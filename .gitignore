@@ -46,7 +46,11 @@ data/
 *.pdf
 *.csv
 *.txt
-*.md
+# Allow specific README.md files
+!README.md
+!**/README.md
+
+# Models
 models/
 *.pkl
 *.h5
@@ -68,4 +72,8 @@ docker-compose.override.yml
 
 # System
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Allow specific requirements.txt files
+!requirements.txt
+!**/requirements.txt 
